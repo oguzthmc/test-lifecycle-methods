@@ -1,6 +1,4 @@
-# test-lifecycle-methods
-
-## What are React lifecycle methods?
+# What are React lifecycle methods?
 
 `You can think of React lifecycle methods as the series of events that happen from the birth of a React component to its death.`
 
@@ -13,9 +11,9 @@ I like to think of them as going through a cycle of birth, growth, and death.
       
 Now that we understand the series of lifecycle events let’s learn more about how they work.
 
-## React Lifecycle Methods
+# React Lifecycle Methods
 
-### render()
+## render()
 
 The _render()_ method is the most used lifecycle method. You will see it in all React classes. This is because _render()_ is the only required method within a class component in React.
 
@@ -33,7 +31,7 @@ If you do need to modify state that would have to happen in the other lifecycle 
 
 Furthermore, keeping your _render()_ simple and clean without state updates makes your app maintainable.<br />
 
-### componentDidMount()
+## componentDidMount()
 
 Now your component has been mounted and ready, that’s when the next React lifecycle method ***_componentDidMount()_*** comes in play.
 
@@ -45,7 +43,7 @@ Unlike the _render()_ method, _componentDidMount()_ allows the use of _setState(
 
 **Caution:** It is recommended that you use this pattern with caution since it could lead to performance issues. The best practice is to ensure that your states are assigned in the _constructor()_. The reason React allows the _setState()_ within this lifecycle method is for special cases like tooltips, modals, and similar concepts when you would need to measure a DOM node before rendering something that depends on its position.<br />
 
-### componentDidUpdate()
+## componentDidUpdate()
 
 This lifecycle method is invoked as soon as the updating happens. The most common use case for the _componentDidUpdate()_ method is updating the DOM in response to prop or state changes.
 
@@ -64,7 +62,7 @@ componentDidUpdate(prevProps) {
 
 Notice in the above example that we are comparing the current props to the previous props. This is to check if there has been a change in props from what it currently is. In this case, there won’t be a need to make the API call if the props did not change.<br />
 
-### componentWillUnmount()
+## componentWillUnmount()
 
 As the name suggests this lifecycle method is called just before the component is unmounted and destroyed. If there are any cleanup actions that you would need to do, this would be the right spot.
 
@@ -74,7 +72,7 @@ This component will never be re-rendered and because of that we cannot call _set
 
 Common cleanup activities performed in this method include, clearing timers, cancelling api calls, or clearing any caches in storage.
 
-### shouldComponentUpdate()
+## shouldComponentUpdate()
 
 This lifecycle can be handy sometimes when you don’t want React to render your state or prop changes.
 
@@ -90,3 +88,6 @@ shouldComponentUpdate(nextProps, nextState) {
 }  
 
 As shown in the example above, this lifecycle should always return a boolean value to the question, **_“Should I re-render my component?”_**
+
+
+# test-lifecycle-methods
