@@ -84,9 +84,9 @@ Keep in mind that this lifecycle method should be sparingly used, and it exists 
 
 **Caution:** Most importantly, do not always rely on it to prevent rendering of your component, since it can lead to several bugs.
 
-`shouldComponentUpdate(nextProps, nextState) {  
-      return this.props.title !== nextProps.title ||   
-            this.state.input !== nextState.input   
-}`  
+shouldComponentUpdate(nextProps, nextState) {  
+&nbsp;&nbsp;&nbsp;&nbsp;return this.props.title !== nextProps.title ||   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.state.input !== nextState.input   
+}  
 
 As shown in the example above, this lifecycle should always return a boolean value to the question, **_“Should I re-render my component?”_**
