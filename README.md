@@ -1,6 +1,6 @@
 # test-lifecycle-methods
 
-## What are React lifecycle methods?
+# What are React lifecycle methods?
 
 `You can think of React lifecycle methods as the series of events that happen from the birth of a React component to its death.`
 
@@ -25,7 +25,7 @@ _render()_ method returns JSX that is displayed in the UI. A render() can also r
 
 **A _render()_ method has to be pure with no side-effects.**
 
-React requires that your _render()_ is pure. Pure functions are those that do not have any side-effects and will always return the same output when the same inputs are passed. This means that you can not _setState()_ within a _render()_ .
+React requires that your _render()_ is pure. Pure functions are those that do not have any side-effects and will always return the same output when the same inputs are passed. This means that you can not _setState()_ within a _render()_
 
 `You cannot modify the component state within the _render()_.`
 
