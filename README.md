@@ -29,7 +29,8 @@ React requires that your _render()_ is pure. Pure functions are those that do no
 
 If you do need to modify state that would have to happen in the other lifecycle methods, therefore keeping _render()_ pure.
 
-Furthermore, keeping your _render()_ simple and clean without state updates makes your app maintainable.<br />
+Furthermore, keeping your _render()_ simple and clean without state updates makes your app maintainable.  
+<br />
 
 ## componentDidMount()
 
@@ -41,7 +42,8 @@ Unlike the _render()_ method, _componentDidMount()_ allows the use of _setState(
 
 `You can modify the component state within the componentDidMount(), but use it with caution.`
 
-**Caution:** It is recommended that you use this pattern with caution since it could lead to performance issues. The best practice is to ensure that your states are assigned in the _constructor()_. The reason React allows the _setState()_ within this lifecycle method is for special cases like tooltips, modals, and similar concepts when you would need to measure a DOM node before rendering something that depends on its position.<br />
+**Caution:** It is recommended that you use this pattern with caution since it could lead to performance issues. The best practice is to ensure that your states are assigned in the _constructor()_. The reason React allows the _setState()_ within this lifecycle method is for special cases like tooltips, modals, and similar concepts when you would need to measure a DOM node before rendering something that depends on its position.  
+<br />
 
 ## componentDidUpdate()
 
@@ -60,7 +62,8 @@ componentDidUpdate(prevProps) {
 &nbsp;&nbsp;&nbsp;&nbsp;}  
 }  
 
-Notice in the above example that we are comparing the current props to the previous props. This is to check if there has been a change in props from what it currently is. In this case, there won’t be a need to make the API call if the props did not change.<br />
+Notice in the above example that we are comparing the current props to the previous props. This is to check if there has been a change in props from what it currently is. In this case, there won’t be a need to make the API call if the props did not change.  
+<br />
 
 ## componentWillUnmount()
 
@@ -70,7 +73,8 @@ As the name suggests this lifecycle method is called just before the component i
 
 This component will never be re-rendered and because of that we cannot call _setState()_ during this lifecycle method.
 
-Common cleanup activities performed in this method include, clearing timers, cancelling api calls, or clearing any caches in storage.
+Common cleanup activities performed in this method include, clearing timers, cancelling api calls, or clearing any caches in storage.  
+<br />
 
 ## shouldComponentUpdate()
 
@@ -87,7 +91,7 @@ shouldComponentUpdate(nextProps, nextState) {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.state.input !== nextState.input   
 }  
 
-As shown in the example above, this lifecycle should always return a boolean value to the question, **_“Should I re-render my component?”_**
+As shown in the example above, this lifecycle should always return a boolean value to the question, **_“Should I re-render my component?”_**  
 
 
 # test-lifecycle-methods
