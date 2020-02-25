@@ -6,12 +6,12 @@
 
 Every component in React goes through a lifecycle of events. I like to think of them as going through a cycle of birth, growth, and death.
 
-### `Mounting 
-      Birth of your component`<br />
-### `Update
-      Growth of your component`<br />
-### `Unmount
-      Death of your component`<br />
+### Mounting 
+      Birth of your component<br/>
+### Update
+      Growth of your component<br/>
+### Unmount
+      Death of your component<br/>
       
 Now that we understand the series of lifecycle events let’s learn more about how they work.
 
