@@ -2,7 +2,7 @@
 
 ## What are React lifecycle methods?
 
-`You can think of React lifecycle methods as the series of events 
+`You can think of React lifecycle methods as the series of events   
 that happen from the birth of a React component to its death.`
 
 Every component in React goes through a lifecycle of events. 
